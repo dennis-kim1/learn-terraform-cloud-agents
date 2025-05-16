@@ -23,9 +23,3 @@ provider "vsphere" {
 data "vsphere_datacenter" "dc" {
   name = var.datacenter
 }
-
-resource "vsphere_virtual_machine" "vm" {
-  name                = var.vm_name
-  resource_pool_id    = var.resource_pool_id
-  datastore_id        = var.datastore_id
-}

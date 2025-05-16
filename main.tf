@@ -7,9 +7,9 @@ terraform {
   }
 
   cloud {
-    organization = "your-org-name"
+    organization = "PandaRG"
     workspaces {
-      name = "test-vsphere"
+      name = "pandarg-vsphere"
     }
   }
 }

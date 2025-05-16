@@ -24,3 +24,4 @@ provider "vsphere" {
 data "vsphere_datacenter" "dc" {
   name = var.datacenter
 }
+#test

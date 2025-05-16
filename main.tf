@@ -1,26 +1,26 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
 terraform {
   required_providers {
-    docker = {
-      source = "kreuzwerker/docker"
+    vsphere = {
+      source  = "hashicorp/vsphere"
+      version = "~> 2.2"
+    }
+  }
+
+  cloud {
+    organization = "your-org-name"
+    workspaces {
+      name = "test-vsphere"
     }
   }
 }
 
-provider "docker" {}
-
-resource "docker_image" "nginx" {
-  name         = "nginx:latest"
-  keep_locally = false
+provider "vsphere" {
+  user                 = var.vsphere_user
+  password             = var.vsphere_password
+  vsphere_server       = var.vsphere_server
+  allow_unverified_ssl = true
 }
 
-resource "docker_container" "nginx" {
-  image = docker_image.nginx.name
-  name  = "nginx"
-  ports {
-    internal = 80
-    external = 8000
-  }
+data "vsphere_datacenter" "dc" {
+  name = var.datacenter
 }

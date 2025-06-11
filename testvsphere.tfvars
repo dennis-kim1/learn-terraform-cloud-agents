@@ -1,0 +1,10 @@
+datacenter     = "PRD-DC"
+datastore      = "vsanDatastore"
+cluster        = "Compute-Cluster"
+network        = "VM Network"
+template_name  = "Windows 2022 Template"
+vm_name        = "tfc-agent-test-vm"
+domain         = "pandarg.dev"
+ip_address     = "172.18.3.210"
+netmask        = 23
+gateway        = "172.18.2.1"

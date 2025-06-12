@@ -6,3 +6,8 @@ variable "datastore" {}
 variable "network" {}
 variable "cluster" {}
 variable "template" {}
+variable "vm_name" {}
+variable "domain" {}
+variable "ip_address" {}
+variable "netmask" {}
+variable "gateway" {}

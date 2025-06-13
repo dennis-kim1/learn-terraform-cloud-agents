@@ -4,7 +4,6 @@ variable "vsphere_server" {}
 variable "datacenter" {}
 variable "datastore" {}
 variable "network" {}
-variable "cluster" {}
 variable "template" {}
 variable "vm_name" {}
 variable "domain" {}

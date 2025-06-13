@@ -16,7 +16,7 @@ data "vsphere_datastore" "datastore" {
 }
 locals {
   cluster_map = {
-    "DevQACluster"       = "Dev/QA Cluster"
+    "DevQACluster"       = "Dev\\/QA Cluster"
     "ProductionCluster"  = "Production Cluster"
   }
 }

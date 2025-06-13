@@ -1,4 +1,4 @@
-datacenter     = "prdmgtinf-vcs01"
+datacenter     = "Datacenter"
 datastore      = "vseries01b_prgdev_ds09"
 cluster        = "Dev/QA Cluster"
 network        = "QA9 Env"

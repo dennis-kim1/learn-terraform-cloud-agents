@@ -1,9 +1,9 @@
 datacenter     = "prdmgtinf-vcs01"
 datastore      = "vseries01b_prgdev_ds09"
 cluster        = "Dev SAS Cluster"
-network        = "VM Network"
-template  = "Windows 2022 Template"
-vm_name        = "Q9PR-TEST-A01"
+network        = "QA9 Env"
+template       = "Windows 2022 Template"
+vm_name        = "Q9PR-TEST-A01_DEV"
 domain         = "pandarg.dev"
 ip_address     = "172.18.3.210"
 netmask        = 23

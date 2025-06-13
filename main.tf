@@ -14,15 +14,9 @@ data "vsphere_datastore" "datastore" {
   name          = var.datastore
   datacenter_id = data.vsphere_datacenter.dc.id
 }
-locals {
-  cluster_map = {
-    "DevQACluster"       = "Dev\\/QA Cluster"
-    "ProductionCluster"  = "Production Cluster"
-  }
-}
 
 data "vsphere_compute_cluster" "cluster" {
-  name          = local.cluster_map[var.cluster]
+  name          = var.cluster
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 

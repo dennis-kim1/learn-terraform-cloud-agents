@@ -18,11 +18,6 @@ data "vsphere_datastore" "datastore" {
 data "vsphere_compute_cluster" "cluster" {
   name          = var.cluster
   datacenter_id = data.vsphere_datacenter.dc.id
-
-  filter {
-    name = "name"
-    values = [".*Dev.*QA.*"]
-  }
 }
 
 data "vsphere_network" "network" {

@@ -1,6 +1,6 @@
 datacenter     = "Datacenter"
 datastore      = "vseries01b_prgdev_ds09"
-cluster        = "Dev/QA Cluster"
+cluster        = "Dev\\/QA Cluster"
 network        = "QA9 Env"
 template       = "Windows 2022 Template"
 vm_name        = "Q9PR-TEST-A01_DEV"

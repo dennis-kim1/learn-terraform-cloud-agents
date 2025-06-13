@@ -16,7 +16,7 @@ data "vsphere_datastore" "datastore" {
 }
 
 data "vsphere_compute_cluster" "cluster" {
-  name          = var.cluster
+  name          = "Dev\\/QA Cluster"
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 

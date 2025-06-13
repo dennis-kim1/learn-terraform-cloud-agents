@@ -3,10 +3,7 @@ variable "vsphere_password" {}
 variable "vsphere_server" {}
 variable "datacenter" {}
 variable "datastore" {}
-variable "cluster" {
-  description = "Logical cluster name (key for cluster_map)"
-  type        = string
-}
+variable "cluster" {}
 variable "network" {}
 variable "template" {}
 variable "vm_name" {}

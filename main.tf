@@ -22,6 +22,7 @@ data "vsphere_compute_cluster" "cluster" {
   filter {
     name = "name"
     values = [".*Dev.*QA.*"]
+  }
 }
 
 data "vsphere_network" "network" {

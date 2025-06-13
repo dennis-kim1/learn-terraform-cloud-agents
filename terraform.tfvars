@@ -1,6 +1,6 @@
 datacenter     = "Datacenter"
 datastore      = "vseries01b_prgdev_ds01"
-cluster        = "Dev%/%QA Cluster"
+cluster        = "Dev/QA Cluster"
 network        = "QA9 Env"
 template       = "Linux Ubuntu 24.04 Template"
 vm_name        = "PDMR-TEST-A01_DEV"

@@ -56,18 +56,6 @@ resource "vsphere_virtual_machine" "vm" {
   clone {
     template_uuid = data.vsphere_virtual_machine.template.id
 
-    customize {
-      linux_options {
-        host_name = var.vm_name
-        domain    = var.domain
-      }
-
-      network_interface {
-        ipv4_address = var.ip_address
-        ipv4_netmask = var.netmask
-      }
-
-      ipv4_gateway = var.gateway
-    }
+   
   }
 }
